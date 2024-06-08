@@ -1,0 +1,40 @@
+
+
+GET http://localhost:3000/api/v2/pokemon
+
+###
+GET http://localhost:3000/api/v2/pokemon
+  ?limit=10
+  &offset=20
+
+###
+
+
+POST http://localhost:3000/api/v2/pokemon
+content-Type: application/json
+
+{
+  "nro": 4,
+  "name": "charmander"
+}
+
+###
+
+GET http://localhost:3000/api/v2/pokemon/bulsaurhdnd
+
+###
+
+
+PATCH http://localhost:3000/api/v2/pokemon/665dc2b67f7651b7e3cb0ef9
+content-Type: application/json
+
+{
+  "nro": 5,
+  "name": "charmander"
+}
+
+###
+
+DELETE http://localhost:3000/api/v2/pokemon/665e6170b57ffc62f0315ca8
+
+###
